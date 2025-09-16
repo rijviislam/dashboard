@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@theme {
+  --color-mint-50: #f1f1f1;
+  --color-mint-100: #e2e2e2;
+  --color-mint-200: #c6c6c6;
+  --color-mint-300: #ababab;
+  --color-mint-400: #919191;
+  --color-mint-500: #777777;
+  --color-mint-600: #5e5e5e;
+  --color-mint-700: #474747;
+  --color-mint-800: #303030;
+  --color-mint-900: #1b1b1b;
+  --color-mint-950: #111111;
+  --color-rose-50: #eef0fe;
+  --color-rose-100: #e1e4fe;
+  --color-rose-200: #bfc6fd;
+  --color-rose-300: #9fabfc;
+  --color-rose-400: #7e91fb;
+  --color-rose-500: #5976fa;
+  --color-rose-600: #1b59f8;
+  --color-rose-700: #1141bc;
+  --color-rose-800: #082c85;
+  --color-rose-900: #031852;
+  --color-rose-950: #020f3b;
+}
+
+@layer utilities {
+  .card {
+    @apply p-5 rounded-2xl bg-white;
+  }
+  .bar-linear1 {
+    background: linear-gradient(143deg, #ffbf1a 5.36%, #ff4080 94.64%);
+  }
+  .bg-linear2 {
+    background: linear-gradient(270deg, #2fea9b 15.5%, #7fdd53 85.5%);
+  }
+}

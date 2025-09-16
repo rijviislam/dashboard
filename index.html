@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <div class="flex h-screen bg-gray-100">
+      <!-- {/* Sidebar */} -->
+      <div
+        class="fixed inset-y-0 left-0 z-30 w-64 bg-white shadow-lg hidden md:flex flex-col"
+      >
+        <div
+          class="h-16 flex items-center text-rose-600 justify-center border-b font-bold"
+        >
+          My Dashboard
+        </div>
+        <nav class="flex-1 p-4 space-y-2">
+          <a
+            href="#"
+            class="block p-2 text-rose-500 rounded hover:bg-rose-600/10"
+          >
+            Dashboard
+          </a>
+          <a
+            href="#"
+            class="block p-2 text-rose-500 rounded hover:bg-rose-600/10"
+          >
+            Users
+          </a>
+          <a
+            href="#"
+            class="block p-2 text-rose-500 rounded hover:bg-rose-600/10"
+          >
+            Settings
+          </a>
+        </nav>
+      </div>
+
+      <!-- {/* Mobile Sidebar (hidden by default) */} -->
+      <div
+        class="fixed inset-y-0 left-0 z-40 w-64 bg-white shadow-lg flex-col md:hidden hidden"
+      >
+        <!-- {/* Add a close button + same nav here */} -->
+      </div>
+
+      <!-- {/* Main content wrapper */} -->
+      <div class="flex-1 flex flex-col md:ml-64">
+        <!-- {/* Topbar */} -->
+        <header
+          class="fixed top-0 left-0 md:left-64 right-0 z-20 h-16 bg-rose-50 flex items-center justify-between px-4 shadow border-b border-rose-500"
+        >
+          <!-- {/* Mobile menu button */} -->
+          <button class="md:hidden p-2 rounded hover:bg-rose-600">☰</button>
+          <h1 class="font-semibold text-rose-600">Reports</h1>
+          <div class="flex items-center gap-4">
+            <span class="text-rose-500">User</span>
+            <img
+              src="./assets/avater.jpg"
+              alt="User"
+              class="size-10 object-contain rounded-full border border-rose-600"
+            />
+          </div>
+        </header>
+
+        <!-- {/* Main content */} -->
+        <main
+          class="flex-1 flex-col flex gap-5 mt-16 p-4 overflow-y-auto bg-rose-100/10"
+        >
+          <h2 class="text-xl font-bold mb-4">Welcome back!</h2>
+
+          <div class="flex lg:flex-row flex-col w-full justify-center gap-5">
+            <div class="grid grid-cols-3 gap-2 lg:gap-5 lg:w-1/2">
+              <div class="card shadow !pb-18">
+                <p class="font-medium text-xs text-mint-900">Active Users</p>
+                <h5 class="text-xl text-mint-800 font-bold">
+                  27
+                  <span class="text-base text-mint-400 font-semibold">/80</span>
+                </h5>
+              </div>
+              <div class="card shadow !pb-18">
+                <p class="font-medium text-xs text-mint-900">Active Users</p>
+                <h5 class="text-xl text-mint-800 font-bold">
+                  27
+                  <span class="text-base text-mint-400 font-semibold">/80</span>
+                </h5>
+              </div>
+              <div class="card shadow !pb-18">
+                <p class="font-medium text-xs text-mint-900">Active Users</p>
+                <h5 class="text-xl text-mint-800 font-bold">
+                  27
+                  <span class="text-base text-mint-400 font-semibold">/80</span>
+                </h5>
+              </div>
+              <div class="card shadow">
+                <p class="font-medium text-xs text-mint-900">Active Users</p>
+                <h5 class="text-xl text-mint-800 font-bold mt-4 mb-1">
+                  27
+                  <span class="text-base text-mint-400 font-semibold">/80</span>
+                </h5>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 117 33"
+                  fill="none"
+                >
+                  <path
+                    opacity="0.1"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.24341 21.8417C1.24341 21.8417 5.75801 21.1092 10.8909 22.8688C20.6532 26.2154 21.2101 20.087 24.8301 17.132C28.142 14.4285 30.8848 16.078 34.5724 19.3841C37.2921 21.8226 41.2557 25.9158 45.3605 25.2568C49.1127 24.6545 51.7727 19.8537 56.9737 18.6328C61.0958 17.6652 64.4456 20.3236 69.1922 19.3841C75.6314 18.1098 78.5077 10.6073 83.1097 10.6073C88.7897 10.6073 92.7887 4.26196 97.9559 4.26196C103.093 4.26196 103.79 7.99317 109.409 10.6073C113.704 12.6058 115.771 10.6073 115.771 10.6073V32.0228H1.24341V21.8417Z"
+                    fill="url(#paint0_linear_2_4857)"
+                  />
+                  <path
+                    d="M1.24341 18.5149C1.24341 18.5149 5.75801 17.7931 10.8909 19.5272C20.6532 22.8253 21.2101 16.7856 24.8301 13.8734C28.142 11.209 30.8848 12.8347 34.5724 16.093C37.2921 18.4961 41.2557 22.53 45.3605 21.8806C49.1127 21.287 51.7727 16.5557 56.9737 15.3525C61.0958 14.3989 64.4456 17.0188 69.1922 16.093C75.6314 14.837 78.5077 7.44315 83.1097 7.44315C88.7897 7.44315 92.7887 1.17456 97.9559 1.17456C103.093 1.17456 103.366 4.86687 108.985 7.44315C113.28 9.41274 115.771 7.44315 115.771 7.44315"
+                    stroke="#1B59F8"
+                    stroke-width="1.84723"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_2_4857"
+                      x1="21.9416"
+                      y1="18.348"
+                      x2="21.9416"
+                      y2="32.0228"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#0062FF" />
+                      <stop offset="1" stop-color="white" stop-opacity="0.01" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="card shadow">
+                <p class="font-medium text-xs text-mint-900">Active Users</p>
+                <h5 class="text-xl text-mint-800 font-bold mt-4 mb-1">
+                  27
+                  <span class="text-base text-mint-400 font-semibold">/80</span>
+                </h5>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 129 33"
+                  fill="none"
+                >
+                  <path
+                    opacity="0.1"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.11401 21.8409C1.11401 21.8409 6.11286 21.1085 11.7963 22.8681C22.6057 26.2147 23.2224 20.0862 27.2307 17.1312C30.8978 14.4277 33.9349 16.0772 38.0179 19.3834C41.0294 21.8218 45.4182 25.915 49.9632 25.2561C54.1179 24.6537 57.0632 19.853 62.8221 18.6321C67.3863 17.6644 71.0955 20.3228 76.3512 19.3834C83.481 18.109 86.6658 10.6066 91.7615 10.6066C98.0507 10.6066 102.479 4.26123 108.2 4.26123C113.888 4.26123 114.66 7.99244 120.881 10.6066C125.638 12.6051 127.927 10.6066 127.927 10.6066V32.0221H1.11401V21.8409Z"
+                    fill="url(#paint0_linear_2_4814)"
+                  />
+                  <path
+                    d="M1.11401 18.5147C1.11401 18.5147 6.11286 17.7928 11.7963 19.5269C22.6057 22.8251 23.2224 16.7854 27.2307 13.8731C30.8978 11.2088 33.9349 12.8344 38.0179 16.0927C41.0294 18.4959 45.4182 22.5298 49.9632 21.8804C54.1179 21.2868 57.0632 16.5555 62.8221 15.3523C67.3863 14.3986 71.0955 17.0185 76.3512 16.0927C83.481 14.8368 86.6658 7.44291 91.7615 7.44291C98.0507 7.44291 102.479 1.17432 108.2 1.17432C113.888 1.17432 114.19 4.86662 120.412 7.44291C125.168 9.41249 127.927 7.44291 127.927 7.44291"
+                    stroke="#1B59F8"
+                    stroke-width="1.84723"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_2_4814"
+                      x1="24.0323"
+                      y1="18.3472"
+                      x2="24.0323"
+                      y2="32.0221"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#0062FF" />
+                      <stop offset="1" stop-color="white" stop-opacity="0.01" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+
+              <div class="card shadow">
+                <p class="font-medium text-xs text-mint-900">Active Users</p>
+                <h5 class="text-xl text-mint-800 font-bold mt-4 mb-1">
+                  27
+                  <span class="text-base text-mint-400 font-semibold">/80</span>
+                </h5>
+                <div class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 117 33"
+                    fill="none"
+                  >
+                    <path
+                      opacity="0.1"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.24341 21.8417C1.24341 21.8417 5.75801 21.1092 10.8909 22.8688C20.6532 26.2154 21.2101 20.087 24.8301 17.132C28.142 14.4285 30.8848 16.078 34.5724 19.3841C37.2921 21.8226 41.2557 25.9158 45.3605 25.2568C49.1127 24.6545 51.7727 19.8537 56.9737 18.6328C61.0958 17.6652 64.4456 20.3236 69.1922 19.3841C75.6314 18.1098 78.5077 10.6073 83.1097 10.6073C88.7897 10.6073 92.7887 4.26196 97.9559 4.26196C103.093 4.26196 103.79 7.99317 109.409 10.6073C113.704 12.6058 115.771 10.6073 115.771 10.6073V32.0228H1.24341V21.8417Z"
+                      fill="url(#paint0_linear_2_4857)"
+                    />
+                    <path
+                      d="M1.24341 18.5149C1.24341 18.5149 5.75801 17.7931 10.8909 19.5272C20.6532 22.8253 21.2101 16.7856 24.8301 13.8734C28.142 11.209 30.8848 12.8347 34.5724 16.093C37.2921 18.4961 41.2557 22.53 45.3605 21.8806C49.1127 21.287 51.7727 16.5557 56.9737 15.3525C61.0958 14.3989 64.4456 17.0188 69.1922 16.093C75.6314 14.837 78.5077 7.44315 83.1097 7.44315C88.7897 7.44315 92.7887 1.17456 97.9559 1.17456C103.093 1.17456 103.366 4.86687 108.985 7.44315C113.28 9.41274 115.771 7.44315 115.771 7.44315"
+                      stroke="#1B59F8"
+                      stroke-width="1.84723"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_2_4857"
+                        x1="21.9416"
+                        y1="18.348"
+                        x2="21.9416"
+                        y2="32.0228"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#0062FF" />
+                        <stop
+                          offset="1"
+                          stop-color="white"
+                          stop-opacity="0.01"
+                        />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/2 card">
+              <div class="flex justify-between border-b border-rose-100 pb-4">
+                <p class="text-mint-500 text-xs font-medium">Activity</p>
+                <select class="font-medium text-rose-900 text-xs">
+                  <option value="Month">Month</option>
+                </select>
+              </div>
+              <div class="grid grid-cols-9 gap-10">
+                <div class="flex flex-col gap-8 font-medium text-xs mt-4">
+                  <p>400</p>
+                  <p>300</p>
+                  <p>200</p>
+                  <p>100</p>
+                  <p>0</p>
+                </div>
+                <div class="h-[220px] mt-4 w-3 rounded-3xl bg-rose-50 relative">
+                  <div
+                    class="bg-rose-500 h-1/2 absolute bottom-0 w-3 rounded-2xl"
+                  ></div>
+                </div>
+                <div class="h-[220px] mt-4 w-3 rounded-3xl bg-rose-50 relative">
+                  <div
+                    class="bg-rose-500 h-2/3 absolute bottom-0 w-3 rounded-2xl"
+                  ></div>
+                </div>
+                <div class="h-[220px] mt-4 w-3 rounded-3xl bg-rose-50 relative">
+                  <div
+                    class="bg-rose-500 h-3/4 absolute bottom-0 w-3 rounded-2xl"
+                  ></div>
+                </div>
+                <div class="h-[220px] mt-4 w-3 rounded-3xl bg-rose-50 relative">
+                  <div
+                    class="bg-rose-500 h-3/4 absolute bottom-0 w-3 rounded-2xl"
+                  ></div>
+                </div>
+                <div class="h-[220px] mt-4 w-3 rounded-3xl bg-rose-50 relative">
+                  <div
+                    class="bg-rose-500 h-5/6 absolute bottom-0 w-3 rounded-2xl"
+                  ></div>
+                </div>
+                <div class="h-[220px] mt-4 w-3 rounded-3xl bg-rose-50 relative">
+                  <div
+                    class="bg-rose-500 h-3/6 absolute bottom-0 w-3 rounded-2xl"
+                  ></div>
+                </div>
+                <div class="h-[220px] mt-4 w-3 rounded-3xl bg-rose-50 relative">
+                  <div
+                    class="bg-rose-500 h-5/6 absolute bottom-0 w-3 rounded-2xl"
+                  ></div>
+                </div>
+                <div class="h-[220px] mt-4 w-3 rounded-3xl bg-rose-50 relative">
+                  <div
+                    class="bg-rose-500 h-5/7 absolute bottom-0 w-3 rounded-2xl"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col lg:flex-row justify-between gap-5 w-full">
+            <div class="lg:w-1/2 card">
+              <div class="flex justify-between pb-4">
+                <p class="text-mint-500 text-xs font-medium">Weakest Topics</p>
+              </div>
+              <div class="flex flex-col gap-5 mt-5">
+                <div class="flex gap-5">
+                  <div class="flex">
+                    <img src="./assets/f1.png" alt="img" />
+                  </div>
+                  <div class="w-full flex flex-col gap-2">
+                    <h6 class="font-semibold text-xs text-mint-950">
+                      Food Safety
+                    </h6>
+                    <div class="flex items-center gap-5">
+                      <div class="w-full h-3 rounded-3xl bar-linear1 relative">
+                        <div
+                          class="bar-linear1 w-4/5 absolute bottom-0 h-full rounded-2xl"
+                        ></div>
+                      </div>
+                      <p class="text-mint-900 font-semibold text-xs flex">
+                        74% <span class="text-mint-500">Correct</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-5">
+                  <div class="flex">
+                    <img src="./assets/f2.png" alt="img" />
+                  </div>
+                  <div class="w-full flex flex-col gap-2">
+                    <h6 class="font-semibold text-xs text-mint-950">
+                      Compliance Basics Procedures
+                    </h6>
+                    <div class="flex items-center gap-5">
+                      <div class="w-full h-3 rounded-3xl bar-linear1 relative">
+                        <div
+                          class="bar-linear1 w-4/5 absolute bottom-0 h-full rounded-2xl"
+                        ></div>
+                      </div>
+                      <p class="text-mint-900 font-semibold text-xs flex">
+                        32% <span class="text-mint-500">Correct</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-5">
+                  <div class="flex">
+                    <img src="./assets/f3.png" alt="img" />
+                  </div>
+                  <div class="w-full flex flex-col gap-2">
+                    <h6 class="font-semibold text-xs text-mint-950">
+                      Company Networking
+                    </h6>
+                    <div class="flex items-center gap-5">
+                      <div class="w-full h-3 rounded-3xl relative bar-linear1">
+                        <div
+                          class="bar-linear1 w-4/5 absolute bottom-0 h-full rounded-2xl"
+                        ></div>
+                      </div>
+                      <p class="text-mint-900 font-semibold text-xs flex">
+                        36% <span class="text-mint-500">Correct</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/2 card">
+              <div class="flex justify-between pb-4">
+                <p class="text-mint-500 text-xs font-medium">
+                  Strongest Topics
+                </p>
+              </div>
+              <div class="flex flex-col gap-5 mt-5">
+                <div class="flex gap-5">
+                  <div class="flex">
+                    <img src="./assets/f1.png" alt="img" />
+                  </div>
+                  <div class="w-full flex flex-col gap-2">
+                    <h6 class="font-semibold text-xs text-mint-950">
+                      Covid Protocols
+                    </h6>
+                    <div class="flex items-center gap-5">
+                      <div class="w-full h-3 rounded-3xl bg-green-100 relative">
+                        <div
+                          class="bg-linear2 w-4/5 absolute bottom-0 h-full rounded-2xl"
+                        ></div>
+                      </div>
+                      <p class="text-mint-900 font-semibold text-xs flex">
+                        74% <span class="text-mint-500">Correct</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-5">
+                  <div class="flex">
+                    <img src="./assets/f2.png" alt="img" />
+                  </div>
+                  <div class="w-full flex flex-col gap-2">
+                    <h6 class="font-semibold text-xs text-mint-950">
+                      Cyber Security Basics
+                    </h6>
+                    <div class="flex items-center gap-5">
+                      <div class="w-full h-3 rounded-3xl bg-green-100 relative">
+                        <div
+                          class="bg-linear2 w-4/5 absolute bottom-0 h-full rounded-2xl"
+                        ></div>
+                      </div>
+                      <p class="text-mint-900 font-semibold text-xs flex">
+                        32% <span class="text-mint-500">Correct</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-5">
+                  <div class="flex">
+                    <img src="./assets/f3.png" alt="img" />
+                  </div>
+                  <div class="w-full flex flex-col gap-2">
+                    <h6 class="font-semibold text-xs text-mint-950">
+                      Social Media Policies
+                    </h6>
+                    <div class="flex items-center gap-5">
+                      <div class="w-full h-3 rounded-3xl relative bg-green-100">
+                        <div
+                          class="bg-linear2 w-4/5 absolute bottom-0 h-full rounded-2xl"
+                        ></div>
+                      </div>
+                      <p class="text-mint-900 font-semibold text-xs flex">
+                        36% <span class="text-mint-500">Correct</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
